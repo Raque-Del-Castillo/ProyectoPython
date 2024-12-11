@@ -10,4 +10,24 @@ print(type(mi_tupla2))
 print(type(mi_tupla3))
 print(type(mi_tupla4))
 
+#Uso try except para capturar error
+mi_tupla = (1,2,3)
+try:
+    mi_tupla[2] = 4
+    print("Se ha modificado la tupla.")
+except:
+    print("No se ha podido modificar la tupla.\n")
+    
+
+#Tupla mixta
+tupla_mixta = (1, "dos", [3,4], {5:"cinco"},(6,7), 8.0, True, None, {9})
+try:
+    tupla_mixta[2][1] = 1
+    print("Se ha modificado la tupla.")
+    print(tupla_mixta)
+except:
+    print("No se ha podido modificar la tupla.\n")
+    
+#Imprimir elementos tupla con un for y su tipo
+
 
