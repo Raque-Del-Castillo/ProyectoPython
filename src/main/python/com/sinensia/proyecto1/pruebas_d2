@@ -1,0 +1,13 @@
+#/usr/bin/python
+
+mi_tupla1 = (1,2,3)
+mi_tupla2 = (1)
+mi_tupla3 = ("Casa")
+mi_tupla4 = ("Casa",)
+
+print(type(mi_tupla1))
+print(type(mi_tupla2))
+print(type(mi_tupla3))
+print(type(mi_tupla4))
+
+
