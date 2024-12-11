@@ -1,7 +1,8 @@
 #/usr/bin/python
 NITROGENO = -196
 
-lista_temperaturas = (35, 523, 56, 234, 1, -34, -53, -254, -48, -315)
-tupla_temperaturas = tuple(lista_temperaturas)
-licuado = tuple(num < NITROGENO for num in tupla_temperaturas)
-print(licuado)
+#Con listas
+items = [35, 523, 56, 234, 1, -34, -53, -254, -48, -315]
+temperaturas = []
+temperaturas = [item for item in items if (item > NITROGENO)]
+print(temperaturas)
