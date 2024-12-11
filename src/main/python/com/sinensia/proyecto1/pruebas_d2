@@ -15,7 +15,7 @@ mi_tupla = (1,2,3)
 try:
     mi_tupla[2] = 4
     print("Se ha modificado la tupla.")
-except:
+except TypeError:
     print("No se ha podido modificar la tupla.\n")
     
 
@@ -25,9 +25,10 @@ try:
     tupla_mixta[2][1] = 1
     print("Se ha modificado la tupla.")
     print(tupla_mixta)
-except:
+except TypeError:
     print("No se ha podido modificar la tupla.\n")
     
 #Imprimir elementos tupla con un for y su tipo
-
+for item in tupla_mixta:
+    print(str(item) + " => " + str(type(item)))
 
