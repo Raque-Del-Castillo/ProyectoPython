@@ -32,3 +32,28 @@ except TypeError:
 for item in tupla_mixta:
     print(str(item) + " => " + str(type(item)))
 
+#Convertir a lista e imprimirla
+lista_mixta = list(tupla_mixta)
+print(lista_mixta)
+
+#Modificar elemnto 1 de la lista y volver a pasarla a tupla
+lista_mixta[1] = "Cambio"
+tupla_mixta = tuple(lista_mixta)
+print(tupla_mixta)
+
+#Crear tupla numerica y realizar suma, maximo y minimo
+tupla_numerica = (1, 2, 3, 4, 5)
+print("Suma: ", sum(tupla_numerica))
+print("Maximo: ", max(tupla_numerica))
+print("Minimo: ", min(tupla_numerica))
+
+#Calcular cuadrados de la tupla con funcion de compresion
+cuadrados = tuple(num ** 2 for num in tupla_numerica)
+print(cuadrados)
+
+#Desempaquetado
+print(f"Tiene {len(cuadrados)} items")
+valor1, valor2, valor3, *resto_valores = cuadrados
+print(valor1, valor2, valor3, resto_valores)
+
+
