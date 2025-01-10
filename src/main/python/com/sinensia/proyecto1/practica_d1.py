@@ -13,6 +13,7 @@ MENSAJE = """Gestion de peliculas
 Elija una opcion:"""
 
 #Que de formato primera en mayus? Control input, que ahora mismo se puede usar de todo
+#Asegurarse de que no este ya en la lista antes de añadirla usar un set?
 def insertar_pelicula():
     titulo = input("Insertar titulo: ")
     genero = input("Insertar el genero: ")
